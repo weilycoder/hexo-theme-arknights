@@ -14,6 +14,8 @@
 
 以上修改也保存在 [Arknights Theme 修改日志](https://weilycoder.github.io/2025/03/30/theme-modify/)，有顺序差异。
 
++ e339fa3: 在暗色模式调低图片亮度；
+
 ## 许可证
 
 原项目许可证采用 MIT 许可证，保留[链接](https://github.com/Yue-plus/hexo-theme-arknights/blob/main/LICENSE)。
