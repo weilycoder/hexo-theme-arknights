@@ -633,6 +633,11 @@
 				) {
 					return "reload";
 				}
+
+				// Ignore if the form has a target attribute
+				if (virtLinkElement.target && virtLinkElement.target !== "_self") {
+					return "target";
+				}
 			}
 
 			var isDefaultPrevented = function (event) {
