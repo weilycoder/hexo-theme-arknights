@@ -15,6 +15,8 @@
 以上修改也保存在 [Arknights Theme 修改日志](https://weilycoder.github.io/2025/03/30/theme-modify/)，有顺序差异。
 
 + `c12ffb5`: 在暗色模式下降低图片亮度；
++ `c968d52`：修复侧边栏 `archives` 链接；
++ `4494960`：在包含 `target` 标签时不应用 `Pjax`；
 
 ## 许可证
 
