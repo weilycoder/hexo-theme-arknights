@@ -729,6 +729,11 @@
 				if (el.href === window.location.href.split("#")[0] + "#") {
 					return "anchor-empty";
 				}
+
+				// Ignore if the form has a target attribute
+				if (el.target && el.target !== "_self") {
+					return "target";
+				}
 			}
 
 			var isDefaultPrevented = function (event) {
