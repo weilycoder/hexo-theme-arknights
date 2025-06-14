@@ -6,7 +6,7 @@
 
 ## 修改日志
 
-修改日志一般按照同 feature 的最后一次提交标记，如果想要参考，请关注提交日志。
+修改日志一般按照同 feature 的最后一次提交标记，通常无交叉。
 
 + `1788c57`: 修改 404 页面；
 + `3c5be48`: 在侧栏增加 modified by；
@@ -19,6 +19,15 @@
 + `c12ffb5`: 在暗色模式下降低图片亮度；
 + `c968d52`：修复侧边栏 `archives` 链接；
 + `bd806c3`：在包含 `target` 标签时不应用 `Pjax`；
++ `7a2e20c`：在侧边栏增加构建时间，可以在 `_config.yml` 中设置 `build_time`，也可以 `scripts` 文件夹下加入以下代码：
+  ```js
+  // scripts/update_build_time.js
+  hexo.extend.filter.register('before_generate', function () {
+    const now = new Date();
+    const buildTime = now.toISOString();
+    hexo.config.build_time = buildTime;
+  });
+  ```
 
 ## 许可证
 
