@@ -6,6 +6,10 @@
 
 ## 修改日志
 
+不要直接使用，[InitializeGiscus.ts](https://github.com/weilycoder/hexo-theme-arknights/blob/main/source/js/_src/include/InitializeGiscus.ts) 中保存了我的 Giscus 配置，请修改/删除并**编译**后使用，否则我将可以操作你的评论。
+
+若你没有 ts 编译条件，也可以直接修改/删除 [arknights.js(L722-L756)](https://github.com/weilycoder/hexo-theme-arknights/blob/main/source/js/arknights.js#L722-L756)。
+
 修改日志一般按照同 feature 的最后一次提交标记，通常无交叉。
 
 + `1788c57`: 修改 404 页面；
