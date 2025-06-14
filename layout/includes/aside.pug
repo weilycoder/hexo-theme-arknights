@@ -70,7 +70,8 @@ aside
     nobr  #{__('footer.modify_by')} 
       a(href= 'https://github.com/weilycoder') weilycoder
     if config.build_time
-      - const buildTime = new Date(config.build_time);
-      - const formattedTime = `${buildTime.getFullYear()}-${String(buildTime.getMonth() + 1).padStart(2, '0')}-${String(buildTime.getDate()).padStart(2, '0')} ${String(buildTime.getHours()).padStart(2, '0')}:${String(buildTime.getMinutes()).padStart(2, '0')}:${String(buildTime.getSeconds()).padStart(2, '0')}`;
       wbr
-      nobr  #{__('footer.build_time')} #{formattedTime}
+      nobr  #{__('footer.build_time')}
+        script.
+          const buildTime = new Date("#{config.build_time}");
+          document.write(' ' + buildTime.toLocaleString());
