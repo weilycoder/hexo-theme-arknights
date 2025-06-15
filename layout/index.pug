@@ -10,9 +10,9 @@ block content
       const fixedUrl = ((str) => str.endsWith('/') ? str : str + '/')(config.pagination_dir || 'page');
       const page_url_for = (pageNum) => {
         if (pageNum === 1) {
-          return url_for();
+          return url_for("/");
         } else {
-          return url_for(fixedUrl + pageNum);
+          return url_for(fixedUrl + pageNum + "/");
         }
       };
     #paginator
